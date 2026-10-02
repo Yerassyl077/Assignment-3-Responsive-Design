@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; 
+    color: #333;
+}
+
+.task0-container {
+    background-color: white; 
+    padding: 40px 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.responsive-title {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.responsive-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.task1-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.custom-box {
+    background-color: white;
+    color: #2c3e50; 
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #e1e8ed; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03); 
+    width: 100%;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.custom-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.portfolio-heading {
+    font-size: 22px;
+    color: #2c3e50;
+    font-weight: bold;
+    border-bottom: 2px solid #3498db; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.sidebar-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+@media (min-width: 768px) {
+    .responsive-title { font-size: 32px; }
+    .responsive-text { font-size: 18px; }
+    
+    .custom-box {
+        width: calc(50% - 10px);
+    }
+
+    .portfolio-heading { font-size: 26px; }
+    .sidebar-text { font-size: 16px; }
+}
+
+@media (min-width: 992px) {
+    .responsive-title { font-size: 42px; }
+    .responsive-text { font-size: 22px; }
+    
+    .custom-box {
+        width: calc(33.333% - 14px);
+    }
+    
+    .portfolio-heading { font-size: 30px; }
+}
+
+@media (max-width: 767px) {
+    .contact-info {
+        display: none;
+    }
+}
